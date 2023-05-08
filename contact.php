@@ -4,27 +4,47 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $message = $_POST["message"];
 
-    // Formspree endpoint
+    // Prepare the data to be sent
+    $data = [
+        "name" => $name,
+        "email" => $email,
+        "message" => $message
+    ];
+
+    // Convert data to JSON format
+    $jsonData = json_encode($data);
+
+    // Set the Formspree endpoint
     $formspreeEndpoint = "https://formspree.io/f/xoqzrbyb";
 
-    // Compose the email content
-    $emailContent = "Name: $name\n" .
-                    "Email: $email\n" .
-                    "Message: $message";
+    // Set the HTTP headers
+    $headers = [
+        "Content-Type: application/json"
+    ];
 
-    // Send the email using Formspree endpoint
-    $ch = curl_init($formspreeEndpoint);
-    curl_setopt($ch, CURLOPT_POST, 1);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $emailContent);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    $response = curl_exec($ch);
-    curl_close($ch);
+    // Create a new cURL resource
+    $curl = curl_init();
 
-    // Check if the email was sent successfully
+    // Set the cURL options
+    curl_setopt_array($curl, [
+        CURLOPT_URL => $formspreeEndpoint,
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_POST => true,
+        CURLOPT_POSTFIELDS => $jsonData,
+        CURLOPT_HTTPHEADER => $headers
+    ]);
+
+    // Execute the cURL request
+    $response = curl_exec($curl);
+
+    // Close the cURL resource
+    curl_close($curl);
+
+    // Check if the request was successful
     if ($response === "OK") {
-        echo "Message sent successfully.";
+        echo "Message sent successfully!";
     } else {
-        echo "Error sending the message.";
+        echo "An error occurred while sending the message.";
     }
 }
 ?>
