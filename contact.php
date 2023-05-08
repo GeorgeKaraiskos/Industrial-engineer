@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST["message"];
 
     // Formspree endpoint
-    $formspreeEndpoint = "https://submit-form.com/https://formspree.io/f/xoqzrbyb";
+    $formspreeEndpoint = "https://formspree.io/f/xoqzrbyb";
 
     // Compose the email content
     $emailContent = "Name: $name\n" .
