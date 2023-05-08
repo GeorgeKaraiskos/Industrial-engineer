@@ -1,0 +1,342 @@
+﻿/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #ff7200;
+    padding: 20px;
+}
+
+.container {
+    margin: 0 20px; /* Increased margin horizontally */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+    nav ul li {
+        display: inline;
+        margin-left: 20px;
+    }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+/* Sections */
+section {
+    padding: 50px 0;
+}
+
+.container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7200;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+    .btn:hover {
+        background-color: #e66000;
+    }
+
+/* CSS for Contact Me section */
+#contact {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button[type="submit"] {
+    background-color: #ff7200;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+    button[type="submit"]:hover {
+        background-color: #e66000;
+    }
+
+.carousel {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    position: relative;
+    transition: transform 0.6s ease;
+}
+
+    .carousel-item.active {
+        display: block;
+    }
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 250%;
+    width: 10px;
+    padding: 10px;
+    margin-top: -50px;
+    color: #ff7200;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0.5 3px 3px 0.5;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 108px;
+    border-radius: 3px 3px 3px 3px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    transition: background-color 0.3s ease;
+    margin: 0 20px; /* Increased margin horizontally */
+    cursor: pointer;
+}
+
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+        background-color: #333;
+    }
+
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+        background-color: #333;
+    }
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #bbb;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+        .carousel-indicators li.active {
+            background-color: #333;
+        }
+.services {
+    margin-top: 50px;
+}
+
+
+    .services h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .services .service-item {
+        margin-bottom: 30px;
+    }
+
+        .services .service-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .services .service-item .icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .services .service-item .title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .services .service-item .description {
+            text-align: center;
+        }
+
+/* Contact */
+.contact {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+    .contact .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .contact h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .contact form {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 5px;
+    }
+
+    .contact .form-group {
+        margin-bottom: 20px;
+    }
+
+    .contact label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .contact input[type="text"],
+    .contact input[type="email"],
+    .contact textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    .contact textarea {
+        height: 100px;
+    }
+
+    .contact button[type="submit"] {
+        background-color: #ff7200;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+        .contact button[type="submit"]:hover {
+            background-color: #e66000;
+        }
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-text {
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+    .footer-link:hover {
+        color: #e66000;
+    }
