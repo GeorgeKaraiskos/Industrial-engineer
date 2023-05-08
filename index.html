@@ -208,15 +208,21 @@
     <section id="contact">
         <div class="container">
             <h2>Contact Me</h2>
-            <form>
-                <form action="contact.php" method="POST">
-                    <!-- form fields -->
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                    <!-- submit button -->
-                    <button type="submit">Send Message</button>
-                </form>
+            <form
+  action="https://formspree.io/f/xoqzrbyb"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
 
             </form>
             <div class="contact-info">
