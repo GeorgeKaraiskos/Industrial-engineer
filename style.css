@@ -15,7 +15,29 @@ header {
     color: #ff7200;
     padding: 20px;
 }
+/* CSS for Home and Services sections */
+.section-container {
+    background-image: url('images/3.jpg');
+    background-size: initial;
+    background-position: left bottom;
+    background-color: rgba(255, 255, 255, 0.00); /* Adjusted background color with transparency */
+}
+#home h1 {
+    color: #bf4600; /* Change the color to your desired color value */
+}
+#home p {
+    color: #bf4600; /* Change the color to your desired color value */
+}
 
+/* Additional CSS for individual sections */
+#home {
+
+    /* Add specific styles for the Home section if needed */
+}
+
+#services {
+    color: #000000; /* Add specific styles for the Services section if needed */
+}
 .container {
     margin: 0 20px; /* Increased margin horizontally */
 }
@@ -58,7 +80,7 @@ section {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff7200;
+    background-color: #bf4600;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
