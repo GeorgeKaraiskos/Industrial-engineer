@@ -23,6 +23,36 @@ header {
     position: relative;
     overflow: hidden;
 }
+.radio-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #000000;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+}
+
+.radio-info {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+    .radio-info ion-icon {
+        margin-right: 4px;
+    }
+
+.radio-controls .radio-toggle-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
 
 .background-animation {
     position:absolute;
@@ -39,7 +69,7 @@ header {
 
 @keyframes spin {
     0% {
-        transform: rotate(180deg);
+        transform: rotate(270deg);
     }
 
     100% {
@@ -54,6 +84,7 @@ header {
 #home p {
     color: #000000;
 }
+
 
 /* Additional CSS for individual sections */
 #home {
@@ -250,6 +281,23 @@ button[type="submit"] {
         margin: 0 110px;
         cursor: pointer;
     }
+.mini-photo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .mini-photo img {
+        max-width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .mini-photo a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+    }
+
 
 /* Contact Me section */
 .contact {
@@ -338,3 +386,4 @@ footer {
     .footer-link:hover {
         color: #e66000;
     }
+
